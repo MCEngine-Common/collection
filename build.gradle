@@ -95,7 +95,7 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             artifact tasks.named('shadowJar').get()
-            artifactId = "-common"
+            artifactId = "${repository_name}-common"
 
             pom {
                 name.set(jarName)
